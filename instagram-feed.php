@@ -17,9 +17,6 @@ if ($err) {
   $response = json_decode($response, true);
 
   if (isset($response["data"])) {
-        
-      // Insert new feed into table
-      $insert = SQLInsert::create('"InstagramFeed"');
 
       foreach ($response["data"] as $data) {
               $ID = $data["id"]; // ID instagram feed
@@ -29,6 +26,5 @@ if ($err) {
               // DO SOMETHING WITH THESE VARIABLES
       }
 
-      
-
- }
+   }
+}
