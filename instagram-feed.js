@@ -1,7 +1,7 @@
 var form = new FormData();
 form.append("app_id", APP_ID);
 form.append("redirect_uri", REDIRECT_URI);
-form.append("response_type", CODE);
+form.append("response_type", "code");
 form.append("scope", "user_profile,user_media");
 
 var settings = {
